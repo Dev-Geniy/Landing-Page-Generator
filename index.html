@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <button id="theme-toggle" aria-label="Toggle Theme">
+            <span class="icon">☀️</span>
+        </button>
+    </header>
+    <main class="container">
+        <h1>Landing Page Generator</h1>
+        <p>Create a stunning landing page for your products or services with ease.</p>
+        
+        <div class="landing-generator">
+            <form id="landing-form" class="form-group">
+                <label for="title">Landing Title:</label>
+                <input type="text" id="title" placeholder="My Awesome Store" required>
+
+                <label for="slogan">Slogan:</label>
+                <input type="text" id="slogan" placeholder="Best deals just for you!" required>
+
+                <label for="logo">Logo URL (optional):</label>
+                <input type="url" id="logo" placeholder="https://example.com/logo.png">
+
+                <label for="product-count">Number of Products/Services:</label>
+                <input type="number" id="product-count" min="1" max="10" value="1" required>
+                <div id="products-container"></div>
+
+                <label for="review-count">Number of Reviews (optional):</label>
+                <input type="number" id="review-count" min="0" max="10" value="0">
+                <div id="reviews-container"></div>
+
+                <label for="faq-count">Number of FAQs (optional):</label>
+                <input type="number" id="faq-count" min="0" max="10" value="0">
+                <div id="faq-container"></div>
+
+                <label for="phone">Phone Number (optional):</label>
+                <input type="tel" id="phone" placeholder="+1234567890">
+
+                <label for="address">Address (optional):</label>
+                <input type="text" id="address" placeholder="123 Main St, City">
+
+                <button type="submit" class="generate-btn">Generate Landing Page</button>
+            </form>
+            <div class="download-buttons" id="download-buttons" style="display: none;">
+                <button id="download-html">Download HTML</button>
+            </div>
+        </div>
+        
+        <p>Want to see the code? Check it out on GitHub: <a href="https://github.com/Dev-Geniy/" target="_blank">https://github.com/Dev-Geniy/</a></p>
+        <p class="note">This microservice allows you to create a stylish landing page for business promotion with minimal effort.</p>
+    </main>
+    
+    <footer class="footer">
+        <div class="social">
+            <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-twitter-x-3d-icon-download-in-png-blend-fbx-gltf-file-formats--logo-network-social-media-pack-logos-icons-8050016.png?f=webp" alt="Twitter Icon" class="twitter-icon">
+            <div>
+                <a href="https://twitter.com/HotDog850642" target="_blank">@HotDog850642</a>
+                <p>I'm a code developer. Feel free to reach out!</p>
+            </div>
+        </div>
+        <div class="donation">
+            <h3>For voluntary donations</h3>
+            <div class="btc-address">
+                <span id="btc-code">bc1q3r5gad7dxc276ael06n02gek7ncm536hpndgmq</span>
+                <button class="copy-btn" data-target="btc-code">Copy</button>
+            </div>
+            <p class="thanks">Thank you for your support!</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
